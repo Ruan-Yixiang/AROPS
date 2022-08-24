@@ -1,6 +1,10 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 # AROPS
 AROPS: A Framework of Automated Reaction Optimization with Parallelized Scheduling
+AROPS
++ The state-of-the-art Bayesian optimizer (PISC-BO) implemented in AROPS can accommodate multi-reactor/multi-analyzer optimization.
++ AROPS provides three different scheduling schemes with optional experiment discarding mechanism, which can be selected according to users’ preference to time cost or reagent consumption.
++ A multi-reactor/multi-analyzer automated synthesis screening platform simulator was constructed to evaluate the optimization algorithm under various scenarios.
 ## Installation
 ### Installation Requirements
 + Python >= 3.7
@@ -16,6 +20,7 @@ git clone https://github.com/pytorch/botorch.git
 pip install -r AROPS_requirements.txt
 ```
 ## Getting Started
+Here's a run down of the optmization example of Case 1 of Benchmark A. 
 ```python
 # The optmization example of Case 1 of Benchmark A.
 from arops import AROPS
