@@ -1,3 +1,4 @@
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 # AROPS
 AROPS: A Framework of Automated Reaction Optimization with Parallelized Scheduling
 ## Installation
