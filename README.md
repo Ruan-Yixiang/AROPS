@@ -36,6 +36,6 @@ res = simulator.run()
 print('Optimum: {:.4f}, \nTime: {:.2f} min, \nNumber of Experiments: {:d}'.format(res.opt_obj, res.time, res.n_exps))
 print('Optimal conditions:', res.opt_con)
 ```
-Benmark B can only run in the Linux environment
+Benmark B can only run in the Linux environment.
 ## License
 AROPS is distributed under an MIT License.
