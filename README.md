@@ -16,7 +16,7 @@ AROPS
 ### Manual install
 You can do a manual install. For a basic install, run:
 ```bash
-git clone https://github.com/pytorch/botorch.git
+https://github.com/Ruan-Yixiang/AROPS.git
 pip install -r AROPS_requirements.txt
 ```
 ## Getting Started
