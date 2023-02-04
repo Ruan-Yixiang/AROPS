@@ -166,6 +166,8 @@ class AROPS:
         # active learning loop
         while 1:
             if n_iter:
+                gp = get_next_exeps(space, train_x, self.train_y, 1, return_gp=True,
+                                    only_return_gp=True)
                 PI = ProbabilityOfImprovementXi(gp, best_f=torch.max(self.train_y), maximize=True)
 
                 # PI discarding mechanism to discard ongoing unpromising experiments
