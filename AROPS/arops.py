@@ -210,7 +210,7 @@ class AROPS:
             else:
                 classify = len(reactor_ready) != 0  # AR modes
             if classify and len(reaction_list) < self.max_experiments and n_break < self.max_break:
-                candidate, qpi, gp = get_next_exeps(space, train_x, self.train_y, len(self.reactor_number), return_gp=True)
+                candidate, qpi, gp = get_next_exeps(space, train_x, self.train_y, self.reactor_number, return_gp=True)
                 EI = ExpectedImprovement(gp, best_f=torch.max(self.train_y), maximize=True)
                 similar_delete_all = []
                 dist_delete = []
